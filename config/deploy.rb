@@ -1,3 +1,5 @@
+require 'bundler/capistrano'
+
 # config valid only for current version of Capistrano
 lock '3.4.0'
 
@@ -8,7 +10,7 @@ set :repo_url, 'git@github.com:arian-amador/cap-testing.git'
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, '/home/rails'
+set :deploy_to, '/var/www/cap-testing'
 
 # Default value for :scm is :git
 set :scm, :git
